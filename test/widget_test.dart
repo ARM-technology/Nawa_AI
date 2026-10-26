@@ -7,15 +7,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:nowachat/main.dart';
 
 void main() {
   testWidgets('App smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+    // التأكد من تهيئة بيئة اختبار فلاتر
+    TestWidgetsFlutterBinding.ensureInitialized();
+
+    // بناء التطبيق وتشغيل الإطار
     await tester.pumpWidget(const AppChat());
 
-    // Verify that the main widget exists.
+    // التحقق من وجود الويدجت الرئيسية
     expect(find.byType(AppChat), findsOneWidget);
   });
 }
