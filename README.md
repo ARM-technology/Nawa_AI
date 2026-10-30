@@ -13,7 +13,7 @@ By leveraging **Riverpod**, **llamadart**, and the **Qwen2.5-0.5B-Instruct-GGUF*
 - 🌐 **Bilingual Support:** High proficiency in understanding and generating both Arabic and English.
 - 🏗️ **Clean Architecture:** Built with `flutter_riverpod` for robust state management and seamless UI transitions.
 - 📥 **Auto Model Downloader:** Automatically checks for local model files, manages progress during downloads from Hugging Face, and initializes the engine.
-
+- Support LLM Studio
 ---
 
 ## 🛠️ Tech Stack & Dependencies
